@@ -22,7 +22,7 @@ namespace PELSI
 
         private string rootFolder;
 
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -30,11 +30,10 @@ namespace PELSI
             // Declares the rootFolder 
             string rootFolder = string.Empty;
 
-           
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         // Check Boxes
@@ -42,43 +41,34 @@ namespace PELSI
         // AMI Check Boxes
         private void checkBoxLicense_CheckedChanged(object sender, EventArgs e)
         {
-
         }
         private void skipSoftware_CheckedChanged(object sender, EventArgs e)
         {
-
         }
         private void skipSettingsini_CheckedChanged(object sender, EventArgs e)
         {
-
         }
         private void skipNI_Click(object sender, EventArgs e)
         {
-
         }
         private void skipREG_CheckedChanged(object sender, EventArgs e)
         {
-
         }
         private void skipREG_Click(object sender, EventArgs e)
         {
-
         }
 
         // MDT Check Boxes
         private void skipREG1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void skipREG1_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void mdtSkipSoftware_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
 
@@ -88,7 +78,7 @@ namespace PELSI
         // Buttons
 
         // Tech Install - Button Click
-        private async void button1_Click(object sender, EventArgs e)
+        private async void TechInstall_Button_Click(object sender, EventArgs e)
         {
             string techMessage = "1. Install software (unless skipped) \n" +
                                  "2. Check/Update Settings.ini \n" +
@@ -137,14 +127,14 @@ namespace PELSI
         }
 
         // AMI License Only Button
-        private void button4_Click(object sender, EventArgs e)
+        private void AmiLicenseButton_Click(object sender, EventArgs e)
         {
             AmiConfigurator amiConfigurator = new AmiConfigurator();
             amiConfigurator.AmiLicense();
         }
 
         // AMI Settings.ini Only Button
-        private void button2_Click(object sender, EventArgs e)
+        private void AmiSettingsButton_Click(object sender, EventArgs e)
         {
             AmiConfigurator amiConfigurator = new AmiConfigurator();
             amiConfigurator.CheckAndUpdateSettings();
@@ -157,7 +147,7 @@ namespace PELSI
         }
 
         // This is the Check list help button
-        private void button3_Click(object sender, EventArgs e)
+        private void CheckHelp_Click(object sender, EventArgs e)
         {
             string message = "Skip Software - Skips the software Installation.\n\n" +
                              "Skip Settings.ini - This skips to check if the Settings.ini file has been set to Designer mode\n\n" +

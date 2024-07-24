@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
+            TechInstall_Button = new Button();
             button2 = new Button();
             speLabel = new Label();
             checkBoxLicense = new CheckBox();
@@ -41,17 +41,17 @@
             button3 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // TechInstall_Button
             // 
-            button1.BackColor = Color.Cyan;
-            button1.Location = new Point(0, 11);
-            button1.Margin = new Padding(0, 5, 0, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(247, 149);
-            button1.TabIndex = 0;
-            button1.Text = "Tech Install";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            TechInstall_Button.BackColor = Color.Cyan;
+            TechInstall_Button.Location = new Point(0, 11);
+            TechInstall_Button.Margin = new Padding(0, 5, 0, 5);
+            TechInstall_Button.Name = "TechInstall_Button";
+            TechInstall_Button.Size = new Size(247, 149);
+            TechInstall_Button.TabIndex = 0;
+            TechInstall_Button.Text = "Tech Install";
+            TechInstall_Button.UseVisualStyleBackColor = false;
+            TechInstall_Button.Click += TechInstall_Button_Click;
             // 
             // button2
             // 
@@ -63,7 +63,7 @@
             button2.TabIndex = 2;
             button2.Text = "Check For Designer Only";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            button2.Click += AmiSettingsButton_Click;
             // 
             // speLabel
             // 
@@ -74,7 +74,7 @@
             speLabel.Location = new Point(194, 214);
             speLabel.Margin = new Padding(5, 0, 5, 0);
             speLabel.Name = "speLabel";
-            speLabel.Size = new Size(125, 32);
+            speLabel.Size = new Size(101, 28);
             speLabel.TabIndex = 3;
             speLabel.Text = "SPE Boiz   ";
             speLabel.Click += speLabel_Click;
@@ -86,7 +86,7 @@
             checkBoxLicense.Location = new Point(269, 472);
             checkBoxLicense.Margin = new Padding(5);
             checkBoxLicense.Name = "checkBoxLicense";
-            checkBoxLicense.Size = new Size(254, 29);
+            checkBoxLicense.Size = new Size(212, 25);
             checkBoxLicense.TabIndex = 5;
             checkBoxLicense.Text = "Skip AMI License/Config";
             checkBoxLicense.UseVisualStyleBackColor = false;
@@ -99,7 +99,7 @@
             skipSoftware.Location = new Point(269, 411);
             skipSoftware.Margin = new Padding(5);
             skipSoftware.Name = "skipSoftware";
-            skipSoftware.Size = new Size(162, 29);
+            skipSoftware.Size = new Size(135, 25);
             skipSoftware.TabIndex = 6;
             skipSoftware.Text = "Skip Software";
             skipSoftware.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             button4.TabIndex = 7;
             button4.Text = "Pull and Store AMI License + Config Only";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += AmiLicenseButton_Click;
             // 
             // skipSettingsini
             // 
@@ -131,7 +131,7 @@
             skipNI.AutoSize = true;
             skipNI.Location = new Point(269, 500);
             skipNI.Name = "skipNI";
-            skipNI.Size = new Size(189, 29);
+            skipNI.Size = new Size(155, 25);
             skipNI.TabIndex = 9;
             skipNI.Text = "Skip NI Services";
             skipNI.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             skipREG.AutoSize = true;
             skipREG.Location = new Point(269, 531);
             skipREG.Name = "skipREG";
-            skipREG.Size = new Size(153, 29);
+            skipREG.Size = new Size(127, 25);
             skipREG.TabIndex = 10;
             skipREG.Text = "Skip REGBAK";
             skipREG.UseVisualStyleBackColor = true;
@@ -159,11 +159,11 @@
             button3.TabIndex = 11;
             button3.Text = "Check List, Click for help";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button3.Click += CheckHelp_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
             BackgroundImage = Properties.Resources.NexTier_Oilfield_Solutions_Logo;
@@ -178,7 +178,7 @@
             Controls.Add(button4);
             Controls.Add(speLabel);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(TechInstall_Button);
             Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -187,7 +187,7 @@
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Etech Laptop Installer";
+            Text = "Etech Laptop Software Installer";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -195,7 +195,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button TechInstall_Button;
         private Button button2;
         private Label speLabel;
         private CheckBox checkBoxLicense;

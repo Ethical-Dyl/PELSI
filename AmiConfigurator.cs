@@ -175,18 +175,5 @@ namespace PELSI
                 MessageBox.Show("DVCommand.exe is not present.");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
